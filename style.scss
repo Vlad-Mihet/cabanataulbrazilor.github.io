@@ -99,7 +99,7 @@ nav {
   background-size: cover;
   h1 {
     @include header-style();
-    padding: 1rem 0;
+    padding: 2vh 0;
   }
 
   .row {
@@ -108,7 +108,7 @@ nav {
 
   img {
     height: 25vh;
-    width:100%;
+    width: 100%;
   }
   .gallery-cell {
     padding: 0 1vh;
@@ -129,15 +129,16 @@ nav {
   }
   #location {
     @include header-style();
-    font-family: 'Kaushan Script', cursive;
+    font-family: "Kaushan Script", cursive;
   }
   #details {
     @include header-style();
-    font-family: 'Kaushan Script', cursive;
+    font-family: "Kaushan Script", cursive;
   }
-  h3, li {
+  h3,
+  li {
     color: white;
-    font-family: 'Kaushan Script', cursive;
+    font-family: "Kaushan Script", cursive;
   }
   h3 {
     margin-bottom: 3vh;
@@ -151,16 +152,52 @@ nav {
   li {
     font-size: 1.5rem;
   }
+  padding-bottom: 10vh;
 }
 
 #sticky-footer {
   border-top: 2px solid white;
   background-color: $primaryColor1;
   flex-shrink: none;
+  padding: 1rem 0;
+
+  .col-6 {
+    text-align: center;
+    h2 {
+      @include header-style();
+      margin-bottom: 2.5vh;
+      font-size: 2rem;
+      font-family: "Kaushan Script", cursive;
+    }
+  }
+
+  .copyright {
+    padding-top: 1rem;
+    span {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
 }
 
 #map {
   height: 400px;
   width: 70%;
   margin: auto;
+}
+
+.socialIcons {
+  text-decoration: none;
+}
+
+#contactDiv {
+  border-bottom: 2px solid white;
+  .col-6 {
+    p {
+      font-weight: 400;
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+    margin-bottom: 1.5rem;
+  }
 }

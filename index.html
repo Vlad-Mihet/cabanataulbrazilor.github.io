@@ -8,8 +8,8 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
-    <link 
-      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
       rel="stylesheet"
     />
     <link
@@ -18,13 +18,19 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav>
         <div><a href="/"> Acasă </a></div>
-        <div><a href="/info"> Informatii </a></div>
+        <div><a href="#info"> Informatii </a></div>
         <div><a href="#gallery"> Galerie </a></div>
         <div id="brand">
           <h3>
@@ -118,51 +124,69 @@
       </div>
     </section>
     <section id="info" class="fwh-slide">
-      <h1 id="info-header"> Informații </h1>
+      <h1 id="info-header">Informații</h1>
       <div class="row">
         <div class="col-6">
-          <h2 id="location" class="text-center"> Localizare </h2>
+          <h2 id="location" class="text-center">Localizare</h2>
           <div id="map"></div>
         </div>
         <div class="col-6">
-          <h2 id="details" class="text-center"> Detalii </h2>
+          <h2 id="details" class="text-center">Detalii</h2>
           <div class="row">
             <div class="col-6">
-              <h3> Număr Încăperi: </h3>
+              <h3>Număr Încăperi:</h3>
               <ul>
-                <li> - 2 băi </li>
-                <li> - 2 camere </li>
-                <li> - 1 Living-room </li>
-                <li> - 1 bucătărie </li>
+                <li>- 2 băi</li>
+                <li>- 2 camere</li>
+                <li>- 1 Living-room</li>
+                <li>- 1 bucătărie</li>
               </ul>
             </div>
             <div class="col-6">
-              <h3> Comodități </h3>
+              <h3>Comodități</h3>
               <ul>
-                <li> - 2 teracote </li>
-                <li> - 1 boiler </li>
-                <li> - 7 paturi </li>
-                <li> - Utilități bucătarie </li>
-                <li> - Priveliște minunată </li>
-                <li> - Zonă perfectă pentru hiking și drumeții</li>
+                <li>- 2 teracote</li>
+                <li>- 1 boiler</li>
+                <li>- 7 paturi</li>
+                <li>- Utilități bucătarie</li>
+                <li>- Priveliște minunată</li>
+                <li>- Zonă perfectă pentru hiking și drumeții</li>
+                <li>- Grătar</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="fb-send-to-messenger" 
-    messenger_app_id="<APP_ID>" 
-    page_id="PAGE_ID" 
-    data-ref="<PASS_THROUGH_PARAM>" 
-    color="<blue | white>" 
-    size="<standard | large | xlarge>">
-  </div>
-  <footer id="sticky-footer" class="py-4 text-white">
-    <div class="container text-center">
-      <small> &copy; 2020 Cabana "Tăul Brazilor" </small>
-    </div>
-  </footer>
+    <div
+      class="fb-send-to-messenger"
+      messenger_app_id="<APP_ID>"
+      page_id="PAGE_ID"
+      data-ref="<PASS_THROUGH_PARAM>"
+      color="<blue | white>"
+      size="<standard | large | xlarge>"
+    ></div>
+    <footer id="sticky-footer" class="text-white">
+      <div id="contactDiv" class="row">
+        <div class="col-6">
+          <h2 class="footerHeader">Social Media</h2>
+          <a
+            class="socialIcons"
+            href="https://www.facebook.com/cabanataulbrazilor"
+          >
+            <i class="fab fa-facebook fa-3x"></i>
+          </a>
+        </div>
+        <div class="col-6">
+          <h2 class="footerHeader">Contact</h2>
+          <p>Email: cabanataulbrazilor@gmail.com</p>
+          <p>Număr de telefon: 0746196137</p>
+        </div>
+      </div>
+      <div class="container text-center copyright">
+        <span> &copy; 2020 Cabana "Tăul Brazilor" </span>
+      </div>
+    </footer>
 
     <!-- Scripts -->
 
@@ -187,20 +211,25 @@
       // Initialize and add the map
       function initMap() {
         // The location of Uluru
-        var uluru = {lat: 46.303600, lng:  23.138493};
+        var uluru = { lat: 46.3036, lng: 23.138493 };
         // The map, centered at Uluru
-        var map = new google.maps.Map(
-            document.getElementById('map'), {zoom: 16, center: uluru});
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 16,
+          center: uluru,
+        });
         // The marker, positioned at Uluru
-        var marker = new google.maps.Marker({position: uluru, map: map});
+        var marker = new google.maps.Marker({ position: uluru, map: map });
       }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTevu5hME44D_blLdQj9n0nZlBzqembkw&callback=initMap">
-    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTevu5hME44D_blLdQj9n0nZlBzqembkw&callback=initMap"
+    ></script>
 
     <!-- Facebook Contact Script -->
 
-   <!--  <script>
+    <!--  <script>
 
       FB.Event.subscribe('send_to_messenger', function(e) {
       // callback for events triggered by the plugin

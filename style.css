@@ -119,7 +119,7 @@ nav a {
   font-family: "Pacifico", cursive;
   font-size: 3.5rem;
   text-shadow: 4px 4px 2px #000000;
-  padding: 1rem 0;
+  padding: 2vh 0;
 }
 
 #gallery .row {
@@ -142,6 +142,7 @@ nav a {
 
 #info {
   background-color: #13313d;
+  padding-bottom: 10vh;
 }
 
 #info #info-header {
@@ -158,7 +159,7 @@ nav a {
   font-family: "Pacifico", cursive;
   font-size: 3.5rem;
   text-shadow: 4px 4px 2px #000000;
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
 }
 
 #info #details {
@@ -166,12 +167,13 @@ nav a {
   font-family: "Pacifico", cursive;
   font-size: 3.5rem;
   text-shadow: 4px 4px 2px #000000;
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
 }
 
-#info h3, #info li {
+#info h3,
+#info li {
   color: white;
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
 }
 
 #info h3 {
@@ -194,11 +196,53 @@ nav a {
   background-color: #13313d;
   -ms-flex-negative: none;
       flex-shrink: none;
+  padding: 1rem 0;
+}
+
+#sticky-footer .col-6 {
+  text-align: center;
+}
+
+#sticky-footer .col-6 h2 {
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 3.5rem;
+  text-shadow: 4px 4px 2px #000000;
+  margin-bottom: 2.5vh;
+  font-size: 2rem;
+  font-family: "Kaushan Script", cursive;
+}
+
+#sticky-footer .copyright {
+  padding-top: 1rem;
+}
+
+#sticky-footer .copyright span {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 #map {
   height: 400px;
   width: 70%;
   margin: auto;
+}
+
+.socialIcons {
+  text-decoration: none;
+}
+
+#contactDiv {
+  border-bottom: 2px solid white;
+}
+
+#contactDiv .col-6 {
+  margin-bottom: 1.5rem;
+}
+
+#contactDiv .col-6 p {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
