@@ -1,0 +1,116 @@
+$primaryColor1: #13313d;
+$primaryColor2: #efcd4a;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fwh-slide {
+  max-height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #13313d;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 7.5vh;
+    margin-top: 0;
+    background-color: #13313d;
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: #efcd4a;
+    text-decoration: none;
+  }
+
+  #brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 7.5vh;
+    margin-top: 0;
+    background-color: #13313d;
+  }
+
+  h3,
+  a {
+    font-family: "Pacifico", cursive;
+    color: white;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}
+
+#bannerImage {
+  width: 100%;
+  height: 92.5vh;
+}
+
+#banner {
+  height: 92.5vh;
+  padding: 0;
+  margin-top: 7.5vh;
+}
+
+#bannerText {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 45vh;
+  h1 {
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-size: 3.5rem;
+    text-shadow: 4px 4px 2px #000000;
+  }
+}
+
+#gallery {
+  text-align: center;
+  background-image: url(./images/gallery.jpg);
+  background-size: cover;
+  h1 {
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-size: 3.5rem;
+    text-shadow: 4px 4px 2px #000000;
+  }
+
+  .row {
+    padding-bottom: 1vh;
+  }
+
+  img {
+    height: 28vh;
+    width: 90%;
+  }
+}
+
+.col-3 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
