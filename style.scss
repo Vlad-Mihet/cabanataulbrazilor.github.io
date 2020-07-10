@@ -4,7 +4,7 @@ $primaryColor2: #efcd4a;
 @mixin header-style {
   color: white;
   font-family: "Pacifico", cursive;
-  font-size: 3.5rem;
+  font-size: 7.5vh;
   text-shadow: 4px 4px 2px #000000;
 }
 
@@ -14,7 +14,15 @@ $primaryColor2: #efcd4a;
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
+  .navbar {
+    padding: 0 !important;
+  }
+  padding: 0 !important;
   height: 7.5vh;
   position: fixed !important;
   top: 0;
@@ -26,16 +34,6 @@ nav {
   justify-content: center;
   flex-wrap: nowrap;
   vertical-align: middle;
-  div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 10rem;
-    height: 7.5vh;
-    margin-top: 0;
-    background-color: $primaryColor1;
-    padding: 0 1.5rem;
-  }
 
   a:hover {
     cursor: pointer;
@@ -44,36 +42,26 @@ nav {
   }
 
   #brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
-    width: 20rem;
-    height: 7.5vh;
-    margin-top: 0;
-    background-color: $primaryColor1;
     text-align: center;
-    padding: 0;
-
+    width: 50%;
     a {
-      width: 20rem;
-      font-size: 2rem;
+      font-size: 3vh;
     }
   }
 
-  h3,
+  .nav-item {
+    background-color: $primaryColor1;
+    padding: 0 3.5vh;
+  }
+
   a {
     font-family: "Pacifico", cursive;
     color: white;
   }
 
-  h3 {
-    font-size: 1.75rem;
-  }
-
   a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2vh;
   }
 }
 
@@ -102,12 +90,16 @@ nav {
     @include header-style();
     padding: 2vh 0;
   }
-  img {
+  .gallery-cell {
     height: 25vh;
     width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+    }
   }
-  .row div {
-    padding: 0.5vh !important;
+  div {
+    padding: 0.5rem;
   }
 }
 
@@ -198,5 +190,49 @@ nav {
       margin-bottom: 0;
     }
     margin-bottom: 1.5rem;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575.98px) {
+  nav {
+    #brand {
+      width: 100%;
+      margin: 0;
+      text-align: left;
+      margin-left: 2.5%;
+    }
+    .nav-item .nav-link {
+      font-size: 2.5vh;
+      padding: 0.5vh;
+    }
+    .mx-auto {
+      margin-left: 0 !important;
+    }
+  }
+  .navbar-toggler {
+    margin-top: 0.5vh;
+    float: right;
+    margin-left: 10%;
+  }
+  #bannerImage {
+    object-fit: none;
+  }
+  #bannerText {
+    h1 {
+      font-size: 5.5vh;
+    }
+    margin-bottom: 40vh;
+  }
+  #info {
+    h2 {
+      margin-top: 3.5vh;
+    }
+  }
+  #info-header {
+    margin-bottom: 5vh;
+  }
+  #map {
+    width: 100%;
   }
 }

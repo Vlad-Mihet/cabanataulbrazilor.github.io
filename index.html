@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
     <title>Cabana "Taul Brazi"</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
@@ -27,38 +30,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
+      <div
+        class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0"
+      >
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="/"> Acasă </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="#gallery"> Galerie </a>
+          </li>
+        </ul>
+      </div>
+      <div id="brand" class="mx-auto my-2 order-0 order-md-1 position-relative">
+        <a class="mx-auto" href="/"> Cabana Tăul Brazilor</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler float-right"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-target=".dual-collapse2"
         >
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-bars text-white"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="navbar-nav">
-            <div class="nav-item"><a class="nav-link" href="/"> Acasă </a></div>
-            <div class="nav-item">
-              <a class="nav-link" href="#gallery"> Galerie </a>
-            </div>
-            <div class="nav-brand" id="brand">
-              <a class="nav-link" href="/"> Cabana Tăul Brazilor</a>
-            </div>
-            <div class="nav-item">
-              <a class="nav-link" href="/rent"> Cazare </a>
-            </div>
-            <div class="nav-item">
-              <a class="nav-link" href="#info"> Informatii </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+      </div>
+      <div
+        class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2"
+      >
+        <ul class="navbar-nav mr-auto text-center">
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="/rent"> Cazare </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="#info"> Informatii </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <section class="fwh-slide">
       <div id="bannerX">
         <img id="bannerImage" src="./images/image7.jpg" />

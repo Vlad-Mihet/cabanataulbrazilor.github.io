@@ -5,7 +5,12 @@
           box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
+  padding: 0 !important;
   height: 7.5vh;
   position: fixed !important;
   top: 0;
@@ -27,21 +32,8 @@ nav {
   vertical-align: middle;
 }
 
-nav div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 10rem;
-  height: 7.5vh;
-  margin-top: 0;
-  background-color: #13313d;
-  padding: 0 1.5rem;
+nav .navbar {
+  padding: 0 !important;
 }
 
 nav a:hover {
@@ -51,42 +43,27 @@ nav a:hover {
 }
 
 nav #brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  vertical-align: middle;
-  width: 20rem;
-  height: 7.5vh;
-  margin-top: 0;
-  background-color: #13313d;
   text-align: center;
-  padding: 0;
+  width: 50%;
 }
 
 nav #brand a {
-  width: 20rem;
-  font-size: 2rem;
+  font-size: 3vh;
 }
 
-nav h3,
+nav .nav-item {
+  background-color: #13313d;
+  padding: 0 3.5vh;
+}
+
 nav a {
   font-family: "Pacifico", cursive;
   color: white;
 }
 
-nav h3 {
-  font-size: 1.75rem;
-}
-
 nav a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2vh;
 }
 
 #bannerImage {
@@ -106,7 +83,7 @@ nav a {
 #bannerText h1 {
   color: white;
   font-family: "Pacifico", cursive;
-  font-size: 3.5rem;
+  font-size: 7.5vh;
   text-shadow: 4px 4px 2px #000000;
 }
 
@@ -119,18 +96,23 @@ nav a {
 #gallery h1 {
   color: white;
   font-family: "Pacifico", cursive;
-  font-size: 3.5rem;
+  font-size: 7.5vh;
   text-shadow: 4px 4px 2px #000000;
   padding: 2vh 0;
 }
 
-#gallery img {
+#gallery .gallery-cell {
   height: 25vh;
   width: 100%;
 }
 
-#gallery .row div {
-  padding: 0.5vh !important;
+#gallery .gallery-cell img {
+  height: 100%;
+  width: 100%;
+}
+
+#gallery div {
+  padding: 0.5rem;
 }
 
 .col-3 {
@@ -148,14 +130,14 @@ nav a {
   text-align: center;
   color: white;
   font-family: "Pacifico", cursive;
-  font-size: 3.5rem;
+  font-size: 7.5vh;
   text-shadow: 4px 4px 2px #000000;
 }
 
 #info #location {
   color: white;
   font-family: "Pacifico", cursive;
-  font-size: 3.5rem;
+  font-size: 7.5vh;
   text-shadow: 4px 4px 2px #000000;
   font-family: "Kaushan Script", cursive;
 }
@@ -163,7 +145,7 @@ nav a {
 #info #details {
   color: white;
   font-family: "Pacifico", cursive;
-  font-size: 3.5rem;
+  font-size: 7.5vh;
   text-shadow: 4px 4px 2px #000000;
   font-family: "Kaushan Script", cursive;
 }
@@ -208,7 +190,7 @@ nav a {
 #sticky-footer #contactDiv div h2 {
   color: white;
   font-family: "Pacifico", cursive;
-  font-size: 3.5rem;
+  font-size: 7.5vh;
   text-shadow: 4px 4px 2px #000000;
   margin-bottom: 2.5vh;
   font-size: 2rem;
@@ -246,5 +228,45 @@ nav a {
   font-weight: 400;
   font-size: 1rem;
   margin-bottom: 0;
+}
+
+@media (max-width: 575.98px) {
+  nav #brand {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    margin-left: 2.5%;
+  }
+  nav .nav-item .nav-link {
+    font-size: 2.5vh;
+    padding: 0.5vh;
+  }
+  nav .mx-auto {
+    margin-left: 0 !important;
+  }
+  .navbar-toggler {
+    margin-top: 0.5vh;
+    float: right;
+    margin-left: 10%;
+  }
+  #bannerImage {
+    -o-object-fit: none;
+       object-fit: none;
+  }
+  #bannerText {
+    margin-bottom: 40vh;
+  }
+  #bannerText h1 {
+    font-size: 5.5vh;
+  }
+  #info h2 {
+    margin-top: 3.5vh;
+  }
+  #info-header {
+    margin-bottom: 5vh;
+  }
+  #map {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
