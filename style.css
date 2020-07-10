@@ -76,8 +76,10 @@ nav a {
   text-align: center;
   width: 100%;
   position: absolute;
-  bottom: 0;
-  margin-bottom: 45vh;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #bannerText h1 {
@@ -242,7 +244,7 @@ nav a {
     padding: 0.5vh;
   }
   nav .mx-auto {
-    margin-left: 0 !important;
+    margin-left: 1% !important;
   }
   .navbar-toggler {
     margin-top: 0.5vh;
@@ -254,7 +256,10 @@ nav a {
        object-fit: none;
   }
   #bannerText {
-    margin-bottom: 40vh;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   #bannerText h1 {
     font-size: 5.5vh;

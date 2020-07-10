@@ -75,8 +75,9 @@ nav {
   text-align: center;
   width: 100%;
   position: absolute;
-  bottom: 0;
-  margin-bottom: 45vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   h1 {
     @include header-style();
   }
@@ -207,7 +208,7 @@ nav {
       padding: 0.5vh;
     }
     .mx-auto {
-      margin-left: 0 !important;
+      margin-left: 1% !important;
     }
   }
   .navbar-toggler {
@@ -222,7 +223,9 @@ nav {
     h1 {
       font-size: 5.5vh;
     }
-    margin-bottom: 40vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   #info {
     h2 {
