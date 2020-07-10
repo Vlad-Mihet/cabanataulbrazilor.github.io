@@ -28,93 +28,106 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div><a href="/"> Acasă </a></div>
-        <div><a href="#gallery"> Galerie </a></div>
-        <div id="brand">
-          <h3>
-            <a href="/"> Cabana Tăul Brazilor</a>
-          </h3>
+      <nav class="navbar navbar-expand-lg">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-nav">
+            <div class="nav-item"><a class="nav-link" href="/"> Acasă </a></div>
+            <div class="nav-item">
+              <a class="nav-link" href="#gallery"> Galerie </a>
+            </div>
+            <div class="nav-brand" id="brand">
+              <a class="nav-link" href="/"> Cabana Tăul Brazilor</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="/rent"> Cazare </a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="#info"> Informatii </a>
+            </div>
+          </div>
         </div>
-        <div><a href="/rent"> Cazare </a></div>
-        <div><a href="#info"> Informatii </a></div>
       </nav>
     </header>
     <section class="fwh-slide">
-      <div id="banner" class="container-fluid">
-        <div id="bannerX">
-          <img id="bannerImage" src="./images/image7.jpg" />
-          <div id="bannerText">
-            <h1>
-              Bine ați venit la Cabana "Tăul Brazilor"!
-            </h1>
-          </div>
+      <div id="bannerX">
+        <img id="bannerImage" src="./images/image7.jpg" />
+        <div id="bannerText">
+          <h1>
+            Bine ați venit la Cabana "Tăul Brazilor"!
+          </h1>
         </div>
       </div>
     </section>
     <section id="gallery" class="fwh-slide">
       <h1 id="gallery-header">Galerie</h1>
       <div class="row">
-        <div class="col-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="gallery-cell">
             <img src="images/cabana1.jpg" />
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="gallery-cell">
             <img src="images/cabana2.jpeg" />
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="gallery-cell">
             <img src="images/cabana3.jpg" />
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="gallery-cell">
             <img src="./images/cabana4.jpg" />
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="gallery-cell">
             <img src="images/cabana5.jpg" />
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="gallery-cell">
             <img src="images/cabana6.jpeg" />
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="gallery-cell">
             <img src="images/cabana7.jpg" />
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="gallery-cell">
             <img src="images/image1.jpg" />
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="gallery-cell">
             <img src="images/image2.jpg" />
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="gallery-cell">
             <img src="images/image5.jpg" />
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="gallery-cell">
             <img src="images/image6.jpg" />
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="gallery-cell">
             <img src="images/image7.jpg" />
           </div>
@@ -124,14 +137,14 @@
     <section id="info" class="fwh-slide">
       <h1 id="info-header">Informații</h1>
       <div class="row">
-        <div class="col-6">
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <h2 id="location" class="text-center">Localizare</h2>
           <div id="map"></div>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <h2 id="details" class="text-center">Detalii</h2>
           <div class="row">
-            <div class="col-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <h3>Număr Încăperi:</h3>
               <ul>
                 <li>- 2 băi</li>
@@ -140,7 +153,7 @@
                 <li>- 1 bucătărie</li>
               </ul>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <h3>Comodități</h3>
               <ul>
                 <li>- 2 teracote</li>
@@ -166,7 +179,7 @@
     ></div>
     <footer id="sticky-footer" class="text-white">
       <div id="contactDiv" class="row">
-        <div class="col-6">
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <h2 class="footerHeader">Social Media</h2>
           <a
             class="socialIcons"
@@ -175,7 +188,7 @@
             <i class="fab fa-facebook fa-3x"></i>
           </a>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <h2 class="footerHeader">Contact</h2>
           <p>Email: cabanataulbrazilor@gmail.com</p>
           <p>Număr de telefon: 0746196137</p>

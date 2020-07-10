@@ -5,12 +5,9 @@
           box-sizing: border-box;
 }
 
-.fwh-slide {
-  max-height: 100vh;
-}
-
 nav {
-  position: fixed;
+  height: 7.5vh;
+  position: fixed !important;
   top: 0;
   z-index: 10;
   width: 100%;
@@ -27,6 +24,7 @@ nav {
           justify-content: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  vertical-align: middle;
 }
 
 nav div {
@@ -43,6 +41,7 @@ nav div {
   height: 7.5vh;
   margin-top: 0;
   background-color: #13313d;
+  padding: 0 1.5rem;
 }
 
 nav a:hover {
@@ -61,10 +60,18 @@ nav #brand {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  vertical-align: middle;
   width: 20rem;
   height: 7.5vh;
   margin-top: 0;
   background-color: #13313d;
+  text-align: center;
+  padding: 0;
+}
+
+nav #brand a {
+  width: 20rem;
+  font-size: 2rem;
 }
 
 nav h3,
@@ -83,14 +90,9 @@ nav a {
 }
 
 #bannerImage {
+  margin-top: 7.5vh;
   width: 100%;
   height: 92.5vh;
-}
-
-#banner {
-  height: 92.5vh;
-  padding: 0;
-  margin-top: 7.5vh;
 }
 
 #bannerText {
@@ -122,17 +124,13 @@ nav a {
   padding: 2vh 0;
 }
 
-#gallery .row {
-  padding-bottom: 2vh;
-}
-
 #gallery img {
   height: 25vh;
   width: 100%;
 }
 
-#gallery .gallery-cell {
-  padding: 0 1vh;
+#gallery .row div {
+  padding: 0.5vh !important;
 }
 
 .col-3 {
@@ -142,7 +140,7 @@ nav a {
 
 #info {
   background-color: #13313d;
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
 }
 
 #info #info-header {
@@ -168,6 +166,10 @@ nav a {
   font-size: 3.5rem;
   text-shadow: 4px 4px 2px #000000;
   font-family: "Kaushan Script", cursive;
+}
+
+#info div {
+  text-align: center;
 }
 
 #info h3,
@@ -199,11 +201,11 @@ nav a {
   padding: 1rem 0;
 }
 
-#sticky-footer .col-6 {
+#sticky-footer #contactDiv div {
   text-align: center;
 }
 
-#sticky-footer .col-6 h2 {
+#sticky-footer #contactDiv div h2 {
   color: white;
   font-family: "Pacifico", cursive;
   font-size: 3.5rem;

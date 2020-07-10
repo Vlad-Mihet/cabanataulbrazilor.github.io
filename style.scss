@@ -14,12 +14,9 @@ $primaryColor2: #efcd4a;
   box-sizing: border-box;
 }
 
-.fwh-slide {
-  max-height: 100vh;
-}
-
 nav {
-  position: fixed;
+  height: 7.5vh;
+  position: fixed !important;
   top: 0;
   z-index: 10;
   width: 100%;
@@ -28,7 +25,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
-
+  vertical-align: middle;
   div {
     display: flex;
     align-items: center;
@@ -37,6 +34,7 @@ nav {
     height: 7.5vh;
     margin-top: 0;
     background-color: $primaryColor1;
+    padding: 0 1.5rem;
   }
 
   a:hover {
@@ -49,10 +47,18 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    vertical-align: middle;
     width: 20rem;
     height: 7.5vh;
     margin-top: 0;
     background-color: $primaryColor1;
+    text-align: center;
+    padding: 0;
+
+    a {
+      width: 20rem;
+      font-size: 2rem;
+    }
   }
 
   h3,
@@ -72,14 +78,9 @@ nav {
 }
 
 #bannerImage {
+  margin-top: 7.5vh;
   width: 100%;
   height: 92.5vh;
-}
-
-#banner {
-  height: 92.5vh;
-  padding: 0;
-  margin-top: 7.5vh;
 }
 
 #bannerText {
@@ -101,17 +102,12 @@ nav {
     @include header-style();
     padding: 2vh 0;
   }
-
-  .row {
-    padding-bottom: 2vh;
-  }
-
   img {
     height: 25vh;
     width: 100%;
   }
-  .gallery-cell {
-    padding: 0 1vh;
+  .row div {
+    padding: 0.5vh !important;
   }
 }
 
@@ -135,6 +131,9 @@ nav {
     @include header-style();
     font-family: "Kaushan Script", cursive;
   }
+  div {
+    text-align: center;
+  }
   h3,
   li {
     color: white;
@@ -152,7 +151,7 @@ nav {
   li {
     font-size: 1.5rem;
   }
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
 }
 
 #sticky-footer {
@@ -161,7 +160,7 @@ nav {
   flex-shrink: none;
   padding: 1rem 0;
 
-  .col-6 {
+  #contactDiv div {
     text-align: center;
     h2 {
       @include header-style();
