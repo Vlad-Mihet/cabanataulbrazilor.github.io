@@ -8,6 +8,11 @@ $primaryColor2: #efcd4a;
   text-shadow: 4px 4px 2px #000000;
 }
 
+@import "navbar";
+@import "gallery";
+@import "info";
+@import "footer";
+
 * {
   margin: 0;
   padding: 0;
@@ -16,53 +21,6 @@ $primaryColor2: #efcd4a;
 
 body {
   overflow-x: hidden;
-}
-
-nav {
-  .navbar {
-    padding: 0 !important;
-  }
-  padding: 0 !important;
-  height: 7.5vh;
-  position: fixed !important;
-  top: 0;
-  z-index: 10;
-  width: 100%;
-  background-color: $primaryColor1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
-  vertical-align: middle;
-
-  a:hover {
-    cursor: pointer;
-    color: $primaryColor2;
-    text-decoration: none;
-  }
-
-  #brand {
-    text-align: center;
-    width: 50%;
-    a {
-      font-size: 3vh;
-    }
-  }
-
-  .nav-item {
-    background-color: $primaryColor1;
-    padding: 0 3.5vh;
-  }
-
-  a {
-    font-family: "Pacifico", cursive;
-    color: white;
-  }
-
-  a {
-    text-decoration: none;
-    font-size: 2vh;
-  }
 }
 
 #bannerImage {
@@ -83,102 +41,9 @@ nav {
   }
 }
 
-#gallery {
-  text-align: center;
-  background-color: $primaryColor1;
-  background-size: cover;
-  h1 {
-    @include header-style();
-    padding: 2vh 0;
-  }
-  .gallery-cell {
-    height: 25vh;
-    width: 100%;
-    img {
-      height: 100%;
-      width: 100%;
-    }
-  }
-  div {
-    padding: 0.5rem;
-  }
-  .container {
-    width: 80%;
-  }
-  .carousel-item {
-    img {
-      height: 60vh;
-      width: 100%;
-    }
-  }
-}
-
 .col-3 {
   padding-right: 0 !important;
   padding-left: 0 !important;
-}
-
-#info {
-  background-color: $primaryColor1;
-  #info-header {
-    padding: 1vh 0;
-    text-align: center;
-    @include header-style();
-  }
-  #location {
-    @include header-style();
-    font-family: "Kaushan Script", cursive;
-  }
-  #details {
-    @include header-style();
-    font-family: "Kaushan Script", cursive;
-  }
-  div {
-    text-align: center;
-  }
-  h3,
-  li {
-    color: white;
-    font-family: "Kaushan Script", cursive;
-  }
-  h3 {
-    margin-bottom: 3vh;
-    text-align: center;
-  }
-  ul {
-    margin-left: 5vw;
-    text-align: left;
-    list-style-type: none;
-  }
-  li {
-    font-size: 1.5rem;
-  }
-  padding-bottom: 5vh;
-}
-
-#sticky-footer {
-  border-top: 2px solid white;
-  background-color: $primaryColor1;
-  flex-shrink: none;
-  padding: 1rem 0;
-
-  #contactDiv div {
-    text-align: center;
-    h2 {
-      @include header-style();
-      margin-bottom: 2.5vh;
-      font-size: 2rem;
-      font-family: "Kaushan Script", cursive;
-    }
-  }
-
-  .copyright {
-    padding-top: 1rem;
-    span {
-      font-size: 1rem;
-      font-weight: 400;
-    }
-  }
 }
 
 #map {

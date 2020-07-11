@@ -1,0 +1,29 @@
+#gallery {
+  text-align: center;
+  background-color: $primaryColor1;
+  background-size: cover;
+  h1 {
+    @include header-style();
+    padding: 2vh 0;
+  }
+  .gallery-cell {
+    height: 25vh;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  div {
+    padding: 0.5rem;
+  }
+  .container {
+    width: 80%;
+  }
+  .carousel-item {
+    img {
+      height: 60vh;
+      width: 100%;
+    }
+  }
+}

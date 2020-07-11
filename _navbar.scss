@@ -1,0 +1,46 @@
+nav {
+  .navbar {
+    padding: 0 !important;
+  }
+  padding: 0 !important;
+  height: 7.5vh;
+  position: fixed !important;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: $primaryColor1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  vertical-align: middle;
+
+  a:hover {
+    cursor: pointer;
+    color: $primaryColor2;
+    text-decoration: none;
+  }
+
+  #brand {
+    text-align: center;
+    width: 50%;
+    a {
+      font-size: 3vh;
+    }
+  }
+
+  .nav-item {
+    background-color: $primaryColor1;
+    padding: 0 3.5vh;
+  }
+
+  a {
+    font-family: "Pacifico", cursive;
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 2vh;
+  }
+}

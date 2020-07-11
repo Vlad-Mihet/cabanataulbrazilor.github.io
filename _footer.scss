@@ -1,0 +1,24 @@
+#sticky-footer {
+  border-top: 2px solid white;
+  background-color: $primaryColor1;
+  flex-shrink: none;
+  padding: 1rem 0;
+
+  #contactDiv div {
+    text-align: center;
+    h2 {
+      @include header-style();
+      margin-bottom: 2.5vh;
+      font-size: 2rem;
+      font-family: "Kaushan Script", cursive;
+    }
+  }
+
+  .copyright {
+    padding-top: 1rem;
+    span {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+}
