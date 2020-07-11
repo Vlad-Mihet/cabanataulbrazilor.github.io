@@ -102,6 +102,15 @@ nav {
   div {
     padding: 0.5rem;
   }
+  .container {
+    width: 80%;
+  }
+  .carousel-item {
+    img {
+      height: 60vh;
+      width: 100%;
+    }
+  }
 }
 
 .col-3 {
@@ -226,6 +235,18 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  #gallery {
+    .container {
+      width: 100%;
+    }
+    .carousel-item {
+      img {
+        height: 22.5vh;
+        width: 100%;
+      }
+    }
   }
   #info {
     h2 {

@@ -117,6 +117,15 @@ nav a {
   padding: 0.5rem;
 }
 
+#gallery .container {
+  width: 80%;
+}
+
+#gallery .carousel-item img {
+  height: 60vh;
+  width: 100%;
+}
+
 .col-3 {
   padding-right: 0 !important;
   padding-left: 0 !important;
@@ -263,6 +272,13 @@ nav a {
   }
   #bannerText h1 {
     font-size: 5.5vh;
+  }
+  #gallery .container {
+    width: 100%;
+  }
+  #gallery .carousel-item img {
+    height: 22.5vh;
+    width: 100%;
   }
   #info h2 {
     margin-top: 3.5vh;
