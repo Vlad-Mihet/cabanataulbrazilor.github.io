@@ -11,8 +11,9 @@
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 0.5s ease;
-  background-color: #008cba;
+  transition-property: all;
+  transition: 0.7s ease;
+  background-color: $primaryColor2;
 }
 
 .hoverable:hover .overlay {
@@ -22,8 +23,9 @@
 
 .text {
   font-family: "Merienda One", cursive;
-  color: white;
-  font-size: 1.75rem;
+  color: $primaryColor1;
+  font-weight: 500;
+  font-size: 2rem;
   position: absolute;
   top: 50%;
   left: 50%;

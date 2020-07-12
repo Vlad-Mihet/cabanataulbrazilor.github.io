@@ -1,0 +1,78 @@
+#rent {
+  margin-top: 7.5vh;
+  background-color: $primaryColor1;
+  h1 {
+    text-align: center;
+    @include header-style();
+  }
+  .container-fluid {
+    width: 80%;
+  }
+  .col-lg-4 {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    height: 40vh;
+    .room-description {
+      width: 100%;
+      text-align: center;
+      h2 {
+        @include header-style();
+        font-size: 4rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 500;
+      }
+    }
+  }
+  .room-options {
+    margin: 5vh auto;
+    .room-button {
+      margin: 0 .25vh;
+      display: inline-block;
+      vertical-align: middle;
+      background-color: $primaryColor1;
+      color: white;
+      border: 2px solid white;
+      border-radius: 15px;
+      font-size: 1.25rem;
+      font-weight: 500;
+      width: 6vw;
+      height: 5vh;
+      &:hover {
+        cursor: pointer;
+        background-color: $primaryColor2;
+        color: $primaryColor1;
+        transition-property: all;
+        transition-duration: .8s;
+      }
+      a, span {
+        line-height: 4.25vh;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+  #offer-section {
+    margin-top: 5vh;
+    width: 80%;
+  }
+  #offers {
+    padding: 5vh 0;
+    .col-lg-6 {
+      height: 50vh;
+      text-align: center;
+      h2 {
+        @include header-style();
+        font-size: 2.5rem;
+      }
+      h3 {
+        @include header-style();
+        font-size: 1.75rem;
+      }
+    }
+  }
+}

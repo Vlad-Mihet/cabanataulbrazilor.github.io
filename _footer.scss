@@ -4,6 +4,10 @@
   flex-shrink: none;
   padding: 1rem 0;
 
+  .container {
+    padding-top: 1rem;
+  }
+
   #contactDiv {
     p {
       font-size: 1.15rem;

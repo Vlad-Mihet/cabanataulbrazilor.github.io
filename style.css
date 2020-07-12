@@ -29,6 +29,10 @@ nav a:hover {
   cursor: pointer;
   color: #efcd4a;
   text-decoration: none;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 nav #brand {
@@ -41,6 +45,7 @@ nav #brand a {
 }
 
 nav .nav-item {
+  font-size: 2.5vh;
   background-color: #13313d;
   padding: 0 3.5vh;
 }
@@ -66,6 +71,7 @@ nav a {
   font-family: "Pacifico", cursive;
   font-size: 7.5vh;
   text-shadow: 4px 4px 2px #000000;
+  margin-top: 7.5vh;
   padding: 2vh 0;
 }
 
@@ -155,6 +161,10 @@ nav a {
   padding: 1rem 0;
 }
 
+#sticky-footer .container {
+  padding-top: 1rem;
+}
+
 #sticky-footer #contactDiv p {
   font-size: 1.15rem;
   font-weight: 500;
@@ -207,6 +217,16 @@ nav a {
   padding: 5rem 0;
 }
 
+#miscellanous .container-fluid h3 {
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 7.5vh;
+  text-shadow: 4px 4px 2px #000000;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 5vh 0;
+}
+
 #miscellanous .container-fluid .row .col-lg-6 img {
   height: auto;
   width: 100%;
@@ -234,7 +254,7 @@ nav a {
   font-size: 7.5vh;
   text-shadow: 4px 4px 2px #000000;
   font-size: 2.5rem;
-  margin-bottom: 10vh;
+  margin-bottom: 7.5vh;
 }
 
 #miscellanous .container-fluid {
@@ -272,9 +292,11 @@ nav a {
   height: 100%;
   width: 100%;
   opacity: 0;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  background-color: #008cba;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  background-color: #efcd4a;
 }
 
 .hoverable:hover .overlay {
@@ -284,14 +306,129 @@ nav a {
 
 .text {
   font-family: "Merienda One", cursive;
-  color: white;
-  font-size: 1.75rem;
+  color: #13313d;
+  font-weight: 500;
+  font-size: 2rem;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+#rent {
+  margin-top: 7.5vh;
+  background-color: #13313d;
+}
+
+#rent h1 {
+  text-align: center;
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 7.5vh;
+  text-shadow: 4px 4px 2px #000000;
+}
+
+#rent .container-fluid {
+  width: 80%;
+}
+
+#rent .col-lg-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40vh;
+}
+
+#rent .col-lg-4 .room-description {
+  width: 100%;
+  text-align: center;
+}
+
+#rent .col-lg-4 .room-description h2 {
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 7.5vh;
+  text-shadow: 4px 4px 2px #000000;
+  font-size: 4rem;
+}
+
+#rent .col-lg-4 .room-description h3 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+#rent .room-options {
+  margin: 5vh auto;
+}
+
+#rent .room-options .room-button {
+  margin: 0 .25vh;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #13313d;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 6vw;
+  height: 5vh;
+}
+
+#rent .room-options .room-button:hover {
+  cursor: pointer;
+  background-color: #efcd4a;
+  color: #13313d;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+#rent .room-options .room-button a, #rent .room-options .room-button span {
+  line-height: 4.25vh;
+  color: white;
+  text-decoration: none;
+}
+
+#rent #offer-section {
+  margin-top: 5vh;
+  width: 80%;
+}
+
+#rent #offers {
+  padding: 5vh 0;
+}
+
+#rent #offers .col-lg-6 {
+  height: 50vh;
+  text-align: center;
+}
+
+#rent #offers .col-lg-6 h2 {
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 7.5vh;
+  text-shadow: 4px 4px 2px #000000;
+  font-size: 2.5rem;
+}
+
+#rent #offers .col-lg-6 h3 {
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 7.5vh;
+  text-shadow: 4px 4px 2px #000000;
+  font-size: 1.75rem;
 }
 
 * {
@@ -353,6 +490,12 @@ body {
   transition-property: all;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
+}
+
+#local-story p {
+  font-style: italic;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.25rem;
 }
 
 .col-3 {

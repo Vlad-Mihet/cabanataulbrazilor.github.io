@@ -4,6 +4,7 @@
   background-size: cover;
   h1 {
     @include header-style();
+    margin-top: 7.5vh;
     padding: 2vh 0;
   }
   .gallery-cell {

@@ -19,6 +19,8 @@ nav {
     cursor: pointer;
     color: $primaryColor2;
     text-decoration: none;
+    transition-property: all;
+    transition-duration: .5s;
   }
 
   #brand {
@@ -30,6 +32,7 @@ nav {
   }
 
   .nav-item {
+    font-size: 2.5vh;
     background-color: $primaryColor1;
     padding: 0 3.5vh;
   }
