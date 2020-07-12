@@ -12,6 +12,8 @@ $primaryColor2: #efcd4a;
 @import "gallery";
 @import "info";
 @import "footer";
+@import "miscellanous";
+@import "hoverables";
 
 * {
   margin: 0;
@@ -20,6 +22,7 @@ $primaryColor2: #efcd4a;
 }
 
 body {
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -41,14 +44,39 @@ body {
   }
 }
 
+#bannerLink {
+  font-family: "Lobster", cursive;
+  font-size: 1.35rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  #bannerButton {
+    margin: auto;
+    background-color: $primaryColor1;
+    width: 10vw;
+    padding: 0.5vw 0.25vw;
+    border: 2px solid white;
+  }
+
+  #bannerButton {
+    &:hover {
+      border-color: $primaryColor1;
+      background-color: $primaryColor2;
+      color: $primaryColor1;
+      transition-property: all;
+      transition-duration: 0.8s;
+    }
+  }
+}
+
 .col-3 {
   padding-right: 0 !important;
   padding-left: 0 !important;
 }
 
 #map {
-  height: 400px;
-  width: 70%;
+  height: 500px;
+  width: 100%;
   margin: auto;
 }
 

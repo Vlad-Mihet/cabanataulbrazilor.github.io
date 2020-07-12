@@ -4,21 +4,31 @@
   flex-shrink: none;
   padding: 1rem 0;
 
-  #contactDiv div {
-    text-align: center;
-    h2 {
-      @include header-style();
-      margin-bottom: 2.5vh;
-      font-size: 2rem;
-      font-family: "Kaushan Script", cursive;
+  #contactDiv {
+    p {
+      font-size: 1.15rem;
+      font-weight: 500;
     }
-  }
+    div {
+      text-align: center;
+      h2 {
+        @include header-style();
+        margin-bottom: 2.5vh;
+        font-size: 2rem;
+        font-family: "Permanent Marker", cursive;
+      }
+      padding-bottom: 1rem;
+      p {
+        margin-bottom: 0;
+      }
+    }
 
-  .copyright {
-    padding-top: 1rem;
-    span {
-      font-size: 1rem;
-      font-weight: 400;
+    .copyright {
+      padding-top: 1rem;
+      span {
+        font-size: 1rem;
+        font-weight: 400;
+      }
     }
   }
 }
