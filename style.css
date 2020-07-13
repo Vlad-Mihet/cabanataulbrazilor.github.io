@@ -332,6 +332,17 @@ nav a {
   background-color: #13313d;
 }
 
+#rent #rent-banner #rent-banner-text {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+}
+
+#rent #rent-banner img {
+  width: 100%;
+  height: auto;
+}
+
 #rent h1 {
   text-align: center;
   color: white;
@@ -344,7 +355,7 @@ nav a {
   width: 80%;
 }
 
-#rent .col-lg-4 {
+#rent .col-lg-5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,15 +366,15 @@ nav a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 40vh;
+  height: 50vh;
 }
 
-#rent .col-lg-4 .room-description {
+#rent .col-lg-5 .room-description {
   width: 100%;
   text-align: center;
 }
 
-#rent .col-lg-4 .room-description h2 {
+#rent .col-lg-5 .room-description h2 {
   color: white;
   font-family: "Pacifico", cursive;
   font-size: 7.5vh;
@@ -371,10 +382,20 @@ nav a {
   font-size: 4rem;
 }
 
-#rent .col-lg-4 .room-description h3 {
+#rent .col-lg-5 .room-description h3 {
   font-size: 1.5rem;
   color: white;
   font-weight: 500;
+}
+
+#rent .col-lg-7 .image-cell img {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+}
+
+#rent .room-row {
+  margin: 10vh 0;
 }
 
 #rent .room-options {
